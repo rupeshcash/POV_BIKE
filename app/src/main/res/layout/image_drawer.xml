@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFCCCCCC"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="60dp"
+        android:background="@color/colorPrimary">
+
+        <ImageButton
+            android:id="@+id/new_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:padding="5dp"
+            android:contentDescription="@string/start_new"
+            android:src="@drawable/clear_all" />
+
+        <ImageButton
+            android:id="@+id/draw_btn"
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/brush"
+            android:src="@drawable/size" />
+
+        <ImageButton
+            android:id="@+id/erase_btn"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/erase"
+            android:src="@drawable/erase" />
+
+        <ImageButton
+            android:id="@+id/save_btn"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/save"
+            android:src="@drawable/save"
+            android:onClick="gotofragments"/>
+    </LinearLayout>
+
+
+    <rupesh.com.pov_bike.DrawingView
+        android:id="@+id/drawing"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="100dp"
+        android:layout_weight="1"
+        android:background="#FFFFFFFF" />
+
+
+</LinearLayout>
